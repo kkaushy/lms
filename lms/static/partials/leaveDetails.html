@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{title}}</h3>
+  </div>
+  <div class="panel-body">
+  	<div class="row">
+  		<div class="col-sm-3">Leave Type</div>
+		<div class="col-sm-3">Balance</div>
+		<div class="col-sm-3">Availed</div>
+		<div class="col-sm-3">Carried Forward</div>
+	</div>    
+  	<div class="row" ng-repeat="detail in leavesDetail">
+		<div class="col-sm-3">{{detail.category}}</div>
+		<div class="col-sm-3">{{detail.balance}}</div>
+		<div class="col-sm-3">{{detail.availed}}</div>
+		<div class="col-sm-3">{{detail.carry_forward}}</div>
+	</div>    
+  </div>
+</div>
